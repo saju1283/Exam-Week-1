@@ -16,6 +16,7 @@ body {
 .registration-card {
     width: 100%;
     max-width: 700px;
+	height: fit-content;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 30px;
 	margin: 10px;
