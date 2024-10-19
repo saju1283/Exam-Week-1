@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.registration-card {
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+	margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+
+label {
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+    width: 210px;
+    text-align: left;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.gender label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*
+.submit-btn:hover {
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+}
+*/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .column {
+        width: 100%; /* Make each column take full width on small screens */
+    }
+}
